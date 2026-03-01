@@ -1,4 +1,7 @@
 
+This post is part of a series where I document my learnings from the “Data Engineering Zoomcamp” course, created by DataTalksClub. The course material can be found on GitHub here: [DataTalksClub/data-engineering-zoomcamp: Free Data Engineering course!](https://github.com/DataTalksClub/data-engineering-zoomcamp/tree/main)
+
+
 # Dockerized Data Ingestion Pipeline (PostgreSQL + Python)
 
 This repository demonstrates how to build a **Docker-based data ingestion pipeline** using **PostgreSQL**, **Python**, and **Docker Compose**.
