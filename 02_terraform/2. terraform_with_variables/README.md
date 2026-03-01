@@ -109,3 +109,13 @@
     default     = "STANDARD"
     }
     ```
+<br>
+<br>
+
+###### Don’t push your credential file, add this code in file gitignore
+
+```
+# Ignore GCP credentials
+*.json
+keys/
+```
