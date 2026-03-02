@@ -210,3 +210,5 @@ __marimo__/
 # Ignore GCP credentials
 *.json
 keys/
+# Ignore directory postgres
+ny_taxi_postgres_data/
