@@ -212,3 +212,5 @@ __marimo__/
 keys/
 # Ignore directory postgres
 ny_taxi_postgres_data/
+
+*.db
