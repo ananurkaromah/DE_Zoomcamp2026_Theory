@@ -214,3 +214,5 @@ keys/
 ny_taxi_postgres_data/
 
 *.db
+*.duckdb
+_pycache_/
