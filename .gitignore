@@ -216,3 +216,5 @@ ny_taxi_postgres_data/
 *.db
 *.duckdb
 _pycache_/
+duckdb.duckdb
+bruin.yml
