@@ -161,14 +161,14 @@ It is designed to be reviewed by **recruiters, hiring managers, and fellow data 
 
 ## 📌 Notes
 
-- Large datasets are not committed to this repository
-- Each module includes hands-on exercises and homework
-- The repository is updated continuously as the program progresses
+- Large datasets are not committed to this repository.
+- Each module includes hands-on exercises and part of running the homework.
+- The repository is updated continuously as the program progresses.
 - To maintain a clean and modular project structure, some components of the program are organized in separate repositories. 
 For example:
-    - Data ingestion with dlt is implemented in a dedicated repository to focus on building ingestion pipelines and handling data extraction from APIs.
-    - Bruin data platform implementation is maintained in its own repository since it involves managing the complete data lifecycle, including ingestion, transformation, orchestration, and data quality.
-    - Homework assignments for each module are also stored in separate repositories to clearly document the solutions and learning progress throughout the program.
+    - Data ingestion with dlt is implemented in a dedicated repository to focus on building ingestion pipelines and handling data extraction from APIs, you can check here : https://github.com/ananurkaromah/nyc-taxi-data-pipeline-with-dlt
+    - Bruin data platform implementation is maintained in its own repository since it involves managing the complete data lifecycle, including ingestion, transformation, orchestration, and data quality, you can check here: https://github.com/ananurkaromah/nyc-taxi-data-pipeline-with-bruin
+    - Homework assignments for each module are also stored in separate repositories to clearly document the solutions and learning progress throughout the program, , for homework solution check here : https://github.com/ananurkaromah/data-engineering-zoomcamp2026-homework
 
 ---
 
