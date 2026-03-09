@@ -1,16 +1,16 @@
-# Batch Processing with Apache Spark – Data Engineering Zoomcamp
+## **Batch Processing with Apache Spark – Data Engineering Zoomcamp**
 
-This repository contains my learning notes and exercises from the **Batch Processing with Apache Spark** module of the **Data Engineering Zoomcamp**. The course material can be found on GitHub here: [DataTalksClub/data-engineering-zoomcamp: Free Data Engineering course!](https://github.com/DataTalksClub/data-engineering-zoomcamp/tree/main)
+This repository contains my learning notes and exercises from the **Batch Processing with Apache Spark** module of the **Data Engineering Zoomcamp**. The course material can be found on GitHub here: [DataTalksClub/data-engineering-zoomcamp: Free Data Engineering course!](https://github.com/DataTalksClub/data-engineering-zoomcamp/tree/main)
 
-The goal of this module is to understand how large-scale data processing works using **Apache Spark** and **PySpark**, and how Spark fits into modern **data lake architectures**.
+The goal of this module is to understand how large-scale data processing works using **Apache Spark** and **PySpark**, and how Spark fits into modern **data lake architectures**.
 
 ---
 
-### What is Apache Spark?
+### **What is Apache Spark?**
 
-Apache Spark is an **open-source distributed computing engine** designed for large-scale data processing.
+Apache Spark is an **open-source distributed computing engine** designed for large-scale data processing.
 
-Spark allows data engineers to process **massive datasets efficiently** by distributing computation across multiple nodes.
+Spark allows data engineers to process **massive datasets efficiently** by distributing computation across multiple nodes.
 
 Key capabilities:
 
@@ -20,13 +20,13 @@ Key capabilities:
 - Integration with machine learning pipelines
 - Multi-language support (Scala, Python, Java, R)
 
-In this module we use **PySpark** to interact with Spark using Python.
+In this module we use **PySpark** to interact with Spark using Python.
 
 ---
 
-### When to Use Spark
+### **When to Use Spark**
 
-Spark is typically used when working with data stored in **data lakes**, such as:
+Spark is typically used when working with data stored in **data lakes**, such as:
 
 - Amazon S3
 - Google Cloud Storage
@@ -38,6 +38,7 @@ These storage systems often contain files such as:
 - JSON
 
 Typical pipeline:
+
 ```
 Raw Data
 ↓
@@ -59,7 +60,7 @@ Spark is especially useful when:
 
 ---
 
-### Learning Objectives
+### **Learning Objectives**
 
 In this module I practiced:
 
@@ -74,16 +75,17 @@ In this module I practiced:
 
 ---
 
-### Environment Setup
+### **Environment Setup**
 
 This setup was tested on:
 
 - Ubuntu (WSL)
 - VSCode
-- Python environment managed with `uv`
+- Python environment managed with `uv`
+
 ---
 
-### Install Java
+### **Install Java**
 
 Spark requires Java.
 
@@ -91,7 +93,6 @@ Spark requires Java.
 sudo apt update
 sudo apt install default-jdk
 ```
-
 
 Verify installation:
 
@@ -101,9 +102,9 @@ java --version
 
 ---
 
-### Install PySpark
+### **Install PySpark**
 
-Using `uv`:
+Using `uv`:
 
 ```
 uv init
@@ -118,11 +119,11 @@ pip install pyspark
 
 ---
 
-### Running Spark
+### **Running Spark**
 
 Create a simple Spark test script:
 
-```python
+```
 from pyspark.sql import SparkSession
 
 spark = SparkSession.builder \
@@ -142,24 +143,26 @@ Run:
 ```
 uv run python test_spark.py
 ```
+
 ---
 
-### Understanding SparkSession
+### **Understanding SparkSession**
 
-SparkSession is the **entry point to Spark**.
+SparkSession is the **entry point to Spark**.
 
 ```
 SparkSession.builder
 ```
 
-| Parameter          | Purpose                               |
-| ------------------ | ------------------------------------- |
+| **Parameter** | **Purpose** |
+| --- | --- |
 | master("local[*]") | Run Spark locally using all CPU cores |
-| appName()          | Name of the Spark application         |
-| getOrCreate()      | Create or reuse an existing session   |
+| appName() | Name of the Spark application |
+| getOrCreate() | Create or reuse an existing session |
+
 ---
 
-### Spark Data Processing Example
+### **Spark Data Processing Example**
 
 Example transformation:
 
@@ -178,6 +181,7 @@ df_trips \
 ```
 
 Pipeline flow:
+
 ```
 Raw Taxi Data
 ↓
@@ -187,9 +191,10 @@ Aggregation
 ↓
 Find longest trip
 ```
+
 ---
 
-### Spark UI
+### **Spark UI**
 
 When running Spark locally, you can access:
 
@@ -203,44 +208,45 @@ Spark UI helps monitor:
 - Stages
 - Executors
 - Task execution
+
 ---
 
-### Spark vs SQL Engines
+### **Spark vs SQL Engines**
 
 Tools like:
+
 - Hive
 - Presto
-- Athena
-allow querying files in data lakes using SQL.
+- Athena allow querying files in data lakes using SQL.
 
 However Spark is preferred when:
+
 - transformations are complex
 - custom logic is required
 - Python workflows are needed
 - machine learning pipelines are involved
+
 ---
 
-### Homework Solution
+### **Homework Solution**
 
 The full solution for the Batch Processing Homework can be found here:
 
 https://github.com/ananurkaromah/data-engineering-zoomcamp2026-homework/blob/main/Homework/06-batch/homework-batch-spark.md
 
-----
+---
 
-### Key Takeaways
+### **Key Takeaways**
 
 - Spark enables distributed big data processing
 - PySpark allows Python users to work with Spark
 - Spark is widely used in modern data engineering pipelines
 - DataFrames are the main abstraction in Spark
 - Spark can scale from local environments to large clusters
+
 ---
 
-### References
+### **References**
 
-Apache Spark documentation
-https://spark.apache.org/docs/latest/
-
-Data Engineering Zoomcamp
-https://github.com/DataTalksClub/data-engineering-zoomcamp
+Apache Spark documentation https://spark.apache.org/docs/latest/
+Data Engineering Zoomcamp https://github.com/DataTalksClub/data-engineering-zoomcamp
