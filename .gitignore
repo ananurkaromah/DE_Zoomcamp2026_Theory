@@ -218,3 +218,8 @@ ny_taxi_postgres_data/
 _pycache_/
 duckdb.duckdb
 bruin.yml
+*.csv
+*.csv.gz
+data/
+nano .gitignore
+05_batch_spark/*.csv.gz
